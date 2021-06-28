@@ -54,13 +54,6 @@ function switchTab(tabID) {
   document.getElementById(tabID).classList.add("active");
 }
 
-let navigation = document.getElementsByClassName("navbar-links")[0];
-let items = document.getElementsByClassName("navbar-link");
-
-for (let i = 0; i < items.length; i++) {
-  items[i].addEventListener('click', close);
-}
-
 function close(e){
     navigation.classList.remove("active")
 };
